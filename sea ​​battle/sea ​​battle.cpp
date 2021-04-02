@@ -2,9 +2,8 @@
 #include <conio.h>
 #include <windows.h>
 #include<string>
-string win = "ура";
-int  x1 = 0;
 void checkgo();
+int  x1 = 0;
 int  x2 = 0;
 int x3 = 0;
 int  x4 = 0;
