@@ -1,50 +1,31 @@
 ﻿
 #include <iostream>
 #include<string>
-#include<ctime>
-#include <time.h>
-#include<string.h>
-#include <cstring>
-#include <stdlib.h>
-#include <stdio.h>
-#include <conio.h>
+string win = "ура";
+void checkgo();
+int x1 = 0;
+int  x2 = 0;
+int x3 = 0;
+int  x4 = 0;
+int  x5 = 0;
+int  x6 = 0;
+int  x7 = 0;
+int  x8 = 0;
+int x9 = 0;
+int place = 5;
 using namespace std;
-void choice();
-void checkplaer();
-void gamplay1();
-void  gamplay0();
-void check();
-void playsistem();
-void play();
-void play1();
-void gogame();
-int resultplaer;
-int resultplaer1;
-int player;
-int player1;
-bool null_or_crectik;
-bool null_or_crectik1;
-bool null_or_crectiksistem;
-bool win = false;
-int complexity;
-bool gocan[9]{};
-int resultmove = 0;
-bool complexity1;
-bool complexity2;
-bool complexity3;
-bool choicemode;
-string pole[9]{};
-string x = "X";
-string o = "O";
-bool go = true;
-void eventH()
+void pole()
 {
-
-	
-
-
+    //cout << " Поле игры " << endl;
+    //cout << " | - 7 - 8 - 9 | " << endl;
+    //cout << " | - 4 - 5 - 6 | " << endl;
+    //cout << " | - 1 - 2 - 3 | " << endl;
+    cout << "| -" << x7 << "-" << x8 << "-" << x9 << "-|" << endl;
+    cout << "| -" << x4 << "-" << x5 << "-" << x6 << "-|" << endl;
+    cout << "| -" << x1 << "-" << x2 << "-" << x3 << "-|" << endl;
+    checkgo();
 }
-void eventP()
+void eventH()
 {
 	
 }
@@ -4356,22 +4337,8 @@ void gamplay1()
 }
 int main()
 {
-	
-
-	int i, stime;
-	long ltime;
-
-	ltime = time(NULL);
-	stime = (unsigned int)ltime / 2;
-	srand(stime);
-
-	setlocale(LC_ALL, "ru");
-	cout << "Здравствуйте пользователь " << endl;
-	getgame();
-	choice();
-	if (choicemode == false)
-	{
-		complexityfind();
-	}
-
-}	}
+    setlocale(0, "");
+    cout << "Добро пожаловать в Морской бой" << endl;
+    pole();
+    return 0;
+}
