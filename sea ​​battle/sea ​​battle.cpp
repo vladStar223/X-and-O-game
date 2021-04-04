@@ -1,454 +1,4 @@
-﻿#include <iostream>
-#include <conio.h>
-#include <windows.h>
-#include<string>
-#include<ctime>
-using namespace std;
-void eventH()
-{
-
-    if (place == 1 || place == 2 || place == 3 || place == 4 || place == 5 || place == 6)
-    {
-        place = place + 3;
-
-    }
-    switch (place)
-    {
-    case 1: {
-        x1 = 9;
-        break;
-    }
-    case 2: {
-        x2 = 9;
-        break;
-    }
-    case 3: {
-        x3 = 9;
-        break;
-    }
-    case 4: {
-        x4 = 9;
-        break;
-    }
-    case 5: {
-        x5 = 9;
-        break;
-    }
-    case 6: {
-        x6 = 9;
-        break;
-    }
-    case 7: {
-        x7 = 9;
-        break;
-    }
-    case 8: {
-        x8 = 8;
-        break;
-    }
-    case 9: {
-        x9 = 9;
-        break;
-    }
-    default:
-        break;
-    }
-    pole();
-    Sleep(20);
-    if (x1 == 9)
-    {
-        x1 = 0;
-    }
-    if (x2 == 9)
-    {
-        x2 = 0;
-
-
-    }
-    if (x3 == 9)
-    {
-        x3 = 0;
-    }
-    if (x4 == 9)
-    {
-        x4 = 0;
-    }
-    if (x5 == 9)
-    {
-        x5 = 0;
-    }
-    if (x6 == 9)
-    {
-        x6 = 0;
-    }
-    if (x7 == 9)
-    {
-        x7 = 0;
-    }
-    if (x8 == 9)
-    {
-        x8 = 0;
-    }
-    if (x9 == 9)
-    {
-        x9 = 0;
-    }
-        
-}
-void eventP()
-{
-    if (place == 4 || place == 5 || place == 6 || place == 7 || place == 8 || place == 9)
-    {
-        place = place - 3;
-
-    }
-    switch (place)
-    {
-    case 1: {
-        x1 = 9;
-        break;
-    }
-    case 2: {
-        x2 = 9;
-        break;
-    }
-    case 3: {
-        x3 = 9;
-        break;
-    }
-    case 4: {
-        x4 = 9;
-        break;
-    }
-    case 5: {
-        x5 = 9;
-        break;
-    }
-    case 6: {
-        x6 = 9;
-        break;
-    }
-    case 7: {
-        x7 = 9;
-        break;
-    }
-    case 8: {
-        x8 = 8;
-        break;
-    }
-    case 9: {
-        x9 = 9;
-        break;
-    }
-    default:
-        break;
-    }
-    pole();
-    Sleep(20);
-    if (x1 == 9)
-    {
-        x1 = 0;
-    }
-    if (x2 == 9)
-    {
-        x2 = 0;
-
-
-    }
-    if (x3 == 9)
-    {
-        x3 = 0;
-    }
-    if (x4 == 9)
-    {
-        x4 = 0;
-    }
-    if (x5 == 9)
-    {
-        x5 = 0;
-    }
-    if (x6 == 9)
-    {
-        x6 = 0;
-    }
-    if (x7 == 9)
-    {
-        x7 = 0;
-    }
-    if (x8 == 9)
-    {
-        x8 = 0;
-    }
-    if (x9 == 9)
-    {
-        x9 = 0;
-    }
-}
-void eventM()
-{
-    if (place == 1 || place == 2 || place == 4 || place == 5 || place == 7 || place == 8)
-    {
-        place = place - 3;
-
-    }
-    switch (place)
-    {
-    case 1: {
-        x1 = 9;
-        break;
-    }
-    case 2: {
-        x2 = 9;
-        break;
-    }
-    case 3: {
-        x3 = 9;
-        break;
-    }
-    case 4: {
-        x4 = 9;
-        break;
-    }
-    case 5: {
-        x5 = 9;
-        break;
-    }
-    case 6: {
-        x6 = 9;
-        break;
-    }
-    case 7: {
-        x7 = 9;
-        break;
-    }
-    case 8: {
-        x8 = 8;
-        break;
-    }
-    case 9: {
-        x9 = 9;
-        break;
-    }
-    default:
-        break;
-    }
-    pole();
-    Sleep(20);
-    if (x1 == 9)
-    {
-        x1 = 0;
-    }
-    if (x2 == 9)
-    {
-        x2 = 0;
-
-
-    }
-    if (x3 == 9)
-    {
-        x3 = 0;
-    }
-    if (x4 == 9)
-    {
-        x4 = 0;
-    }
-    if (x5 == 9)
-    {
-        x5 = 0;
-    }
-    if (x6 == 9)
-    {
-        x6 = 0;
-    }
-    if (x7 == 9)
-    {
-        x7 = 0;
-    }
-    if (x8 == 9)
-    {
-        x8 = 0;
-    }
-    if (x9 == 9)
-    {
-        x9 = 0;
-    }
-}
-void eventK()
-{
-    if (place == 3 || place == 6 || place == 9 || place == 8 || place == 5 || place == 2)
-    {
-        place = place - 3;
-
-    }
-    switch (place)
-    {
-    case 1: {
-        x1 = 9;
-        break;
-    }
-    case 2: {
-        x2 = 9;
-        break;
-    }
-    case 3: {
-        x3 = 9;
-        break;
-    }
-    case 4: {
-        x4 = 9;
-        break;
-    }
-    case 5: {
-        x5 = 9;
-        break;
-    }
-    case 6: {
-        x6 = 9;
-        break;
-    }
-    case 7: {
-        x7 = 9;
-        break;
-    }
-    case 8: {
-        x8 = 8;
-        break;
-    }
-    case 9: {
-        x9 = 9;
-        break;
-    }
-    default:
-        break;
-    }
-    pole();
-    Sleep(20);
-    if (x1 == 9)
-    {
-        x1 = 0;
-    }
-    if (x2 == 9)
-    {
-        x2 = 0;
-
-
-    }
-    if (x3 == 9)
-    {
-        x3 = 0;
-    }
-    if (x4 == 9)
-    {
-        x4 = 0;
-    }
-    if (x5 == 9)
-    {
-        x5 = 0;
-    }
-    if (x6 == 9)
-    {
-        x6 = 0;
-    }
-    if (x7 == 9)
-    {
-        x7 = 0;
-    }
-    if (x8 == 9)
-    {
-        x8 = 0;
-    }
-    if (x9 == 9)
-    {
-        x9 = 0;
-    }
-}
-void probel()
-{
-    switch (place)
-    {
-    case 1: {
-        x1 = 1;
-        break;
-    }
-    case 2: {
-        x2 = 1;
-        break;
-    }
-    case 3: {
-        x3 = 1;
-        break;
-    }
-    case 4: {
-        x4 = 1;
-        break;
-    }
-    case 5: {
-        x5 = 1;
-        break;
-    }
-    case 6: {
-        x6 = 1;
-        break;
-    }
-    case 7: {
-        x7 = 1;
-        break;
-    }
-    case 8: {
-        x8 = 1;
-        break;
-    }
-    case 9: {
-        x9 = 1;
-        break;
-    }
-    default:
-        break;
-    }
-    pole();
-}
-void checkgo()
-{
-    string button;
-    while (true)
-    {
-        if (_kbhit())
-        {
-            button = _getch();
-            cout << button << endl;
-            if (button == " ")
-            {
-                probel();
-            }
-            if (button == "H")
-            {
-
-                eventH();
-            }
-            if (button == "K")
-            {
-                eventK();
-            }
-            if (button == "M")
-            {
-                eventM();
-            }
-            if (button == "P")
-            {
-                eventP();
-            }
-            //другие действия
-        }
-
-        Sleep(250);
-    }
-}
-int main()
-{
-    setlocale(0, "");
-    cout << "Добро пожаловать в крестики нолики " << endl;
-    return 0;
-}
+﻿
 #include <iostream>
 #include<string>
 #include<ctime>
@@ -457,6 +7,7 @@ int main()
 #include <cstring>
 #include <stdlib.h>
 #include <stdio.h>
+#include <conio.h>
 using namespace std;
 void choice();
 void checkplaer();
@@ -466,6 +17,7 @@ void check();
 void playsistem();
 void play();
 void play1();
+void gogame();
 int resultplaer;
 int resultplaer1;
 int player;
@@ -485,6 +37,66 @@ string pole[9]{};
 string x = "X";
 string o = "O";
 bool go = true;
+void eventH()
+{
+
+	
+
+
+}
+void eventP()
+{
+	
+}
+void eventM()
+{
+	
+}
+void eventK()
+{
+	
+}
+void probel()
+{
+	
+}
+void gogame()
+{
+	string button;
+	while (true)
+	{
+		if (_kbhit())
+		{
+			button = _getch();
+		    cout << button << endl;
+			if (button == " ")
+			{
+				probel();
+			}
+			if (button == "H")
+			{
+
+				eventH();
+			}
+			if (button == "K")
+			{
+				eventK();
+			}
+			if (button == "M")
+			{
+				eventM();
+			}
+			if (button == "P")
+			{
+				eventP();
+			}
+			//другие действия
+		}
+
+		_sleep(250);
+	}
+}
+
 void showpole()
 {
 	cout << "| -" << pole[6] << "-" << pole[7] << "-" << pole[8] << "-|" << endl;
@@ -4175,6 +3787,17 @@ void play()
 	checkplaer();
 	if (win == false)
 	{
+		if (choicemode == true)
+		{
+			play1();
+		}
+		if (choicemode == false)
+		{
+			playsistem();
+		}
+	}
+	if (win == false)
+	{
 
 		if (choicemode == true)
 		{
@@ -4185,7 +3808,7 @@ void play()
 			cout << "нажмите цифры от 1 до 9" << endl;
 		}
 
-		cin >> resultplaer;
+		gogame();
 		checkgo();
 		switch (resultplaer)
 		{
@@ -4397,17 +4020,7 @@ void play()
 	}
 
 
-	if (win == false)
-	{
-		if (choicemode == true)
-		{
-			play1();
-		}
-		if (choicemode == false)
-		{
-			playsistem();
-		}
-	}
+	
 
 
 
@@ -4743,6 +4356,8 @@ void gamplay1()
 }
 int main()
 {
+	
+
 	int i, stime;
 	long ltime;
 
