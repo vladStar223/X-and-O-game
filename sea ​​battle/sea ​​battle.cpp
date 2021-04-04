@@ -4198,15 +4198,16 @@ void getgame()
 	cout << "| - 4 - 5 - 6|" << endl;
 	cout << "| - 1 - 2 - 3|" << endl;
 }
->>>>>>> 32fd49b (0.4.1)
-for (int i = 0; i < 9; i++)
-{
-	pole[i] = "-";
-}
-for (int i = 0; i < 9; i++)
-{
-	gocan[i] = true;
-}
+
+	for (int i = 0; i < 9; i++)
+	{
+		pole[i] = "-";
+	}
+	for (int i = 0; i < 9; i++)
+	{
+		gocan[i] = true;
+	}
+
 void gamplay0()
 {
 	cout << "Выбирите за кого будете играть" << endl;
@@ -4293,11 +4294,6 @@ void gamplay1()
 }
 int main()
 {
-<<<<<<< HEAD
-	
-
-=======
->>>>>>> 32fd49b (0.4.1)
 	int i, stime;
 	long ltime;
 
@@ -4314,4 +4310,4 @@ int main()
 		complexityfind();
 	}
 
-}	}
+}	
