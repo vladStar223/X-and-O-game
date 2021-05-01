@@ -4198,16 +4198,15 @@ void getgame()
 	cout << "| - 4 - 5 - 6|" << endl;
 	cout << "| - 1 - 2 - 3|" << endl;
 }
-
-	for (int i = 0; i < 9; i++)
-	{
-		pole[i] = "-";
-	}
-	for (int i = 0; i < 9; i++)
-	{
-		gocan[i] = true;
-	}
-
+>>>>>>> 32fd49b (0.4.1)
+for (int i = 0; i < 9; i++)
+{
+	pole[i] = "-";
+}
+for (int i = 0; i < 9; i++)
+{
+	gocan[i] = true;
+}
 void gamplay0()
 {
 	cout << "Выбирите за кого будете играть" << endl;
