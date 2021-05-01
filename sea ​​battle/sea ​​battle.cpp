@@ -4198,13 +4198,16 @@ void getgame()
 	cout << "| - 4 - 5 - 6|" << endl;
 	cout << "| - 1 - 2 - 3|" << endl;
 }
-for (int i = 0; i < 9; i++)
+void creatarr()
 {
-	pole[i] = "-";
-}
-for (int i = 0; i < 9; i++)
-{
-	gocan[i] = true;
+	for (int i = 0; i < 9; i++)
+	{
+		pole[i] = "-";
+	}
+	for (int i = 0; i < 9; i++)
+	{
+		gocan[i] = true;
+	}
 }
 void gamplay0()
 {
