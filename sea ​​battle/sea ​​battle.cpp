@@ -6,6 +6,9 @@
 #include <cstring>
 #include <stdlib.h>
 #include <stdio.h>
+#include <conio.h>
+#include <windows.h>
+
 using namespace std;
 void choice();
 void checkplaer();
@@ -34,6 +37,62 @@ string pole[9]{};
 string x = "X";
 string o = "O";
 bool go = true;
+void eventH()
+{
+
+
+}
+void eventP()
+{
+	
+}
+void eventM()
+{
+	
+}
+void eventK()
+{
+	
+}
+void probel()
+{
+}
+void goplayer()
+{
+	string button;
+	while (true)
+	{
+		if (_kbhit())
+		{
+			button = _getch();
+			cout << button << endl;
+			if (button == " ")
+			{
+				probel();
+			}
+			if (button == "H")
+			{
+
+				eventH();
+			}
+			if (button == "K")
+			{
+				eventK();
+			}
+			if (button == "M")
+			{
+				eventM();
+			}
+			if (button == "P")
+			{
+				eventP();
+			}
+			//другие действия
+		}
+
+		Sleep(250);
+	}
+}
 void showpole()
 {
 	cout << "| -" << pole[6] << "-" << pole[7] << "-" << pole[8] << "-|" << endl;
@@ -4197,6 +4256,7 @@ void getgame()
 	cout << "| - 7 - 8 - 9|" << endl;
 	cout << "| - 4 - 5 - 6|" << endl;
 	cout << "| - 1 - 2 - 3|" << endl;
+	creatarr();
 }
 void creatarr()
 {
@@ -4295,6 +4355,7 @@ void gamplay1()
 }
 int main()
 {
+	
 	int i, stime;
 	long ltime;
 
